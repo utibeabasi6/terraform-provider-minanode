@@ -12,7 +12,6 @@ terraform {
   required_providers {
     minanode = {
       source = "utibeabasi6/minanode"
-      version = "0.0.7"
     }
   }
 }
@@ -24,7 +23,7 @@ Create a provider block and pass in the path to your Kubeconfig file. Leave blan
 ```hcl
 provider "minanode" {
   # Configuration options
-  kubeconfif = # Path to kubeconfig file
+  kubeconfig = # Path to kubeconfig file
 }
 ```
 

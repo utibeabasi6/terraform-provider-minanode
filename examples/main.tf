@@ -2,7 +2,6 @@ terraform {
   required_providers {
     minanode = {
       source = "utibeabasi6/minanode"
-      version = "0.0.7"
     }
   }
 }
