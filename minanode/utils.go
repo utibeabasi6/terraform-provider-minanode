@@ -38,8 +38,8 @@ func CreateNode(clientset *kubernetes.Clientset, namespace string, name string, 
 					Containers: []apiv1.Container{
 						{
 							Name:  name,
-							Image: "nginx", // "minaprotocol/mina-daemon:latest",
-							//Args:  []string{"daemon", "--external-port", "8302"},
+							Image: "minaprotocol/mina-daemon:latest",
+							Args:  []string{"daemon", "--external-port", "8302"},
 							VolumeMounts: []apiv1.VolumeMount{
 								apiv1.VolumeMount{MountPath: "/keys", Name: "key-pair"},
 								apiv1.VolumeMount{MountPath: "/root/.mina-config", Name: "mina-config"},
